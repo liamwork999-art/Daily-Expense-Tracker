@@ -1,5 +1,5 @@
 /*
-Daily Expense Tracker
+Daily Expense Tracker v0.1
 
 A small JavaScript project that calculates:
 - total spending
@@ -25,7 +25,7 @@ function expensesAboveLimit(limitValue, expenseList) {
   const aboveLimitExpenses = expenseList.filter((value) => value > limitValue);
 
   return `Expenses above limit: ${aboveLimitExpenses.length} -> (${aboveLimitExpenses.join(
-    " and ",
+    ' and ',
   )}) | Limit: ${limitValue}`;
 }
 
@@ -33,7 +33,7 @@ function average(expenseList) {
   return totalAmountSpent(expenseList) / expenseList.length;
 }
 
-console.log("\nExpenses Display\n");
+console.log('\nExpenses Display\n');
 console.log(`💠 Total: ${totalAmountSpent(expenses)}`);
 console.log(`💠 Largest expense: ${largestExpense(expenses)}`);
 console.log(`💠 ${expensesAboveLimit(limit, expenses)}`);
